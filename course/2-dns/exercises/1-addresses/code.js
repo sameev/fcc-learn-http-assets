@@ -6,7 +6,10 @@ async function fetchIPAddress(domain) {
   })
   const respObject = await resp.json()
 
-  console.log(respObject)
+  for(let record of respObject.Answer) {
+    return record.data
+  }
+  return null
 }
 
 // don't touch below this line
