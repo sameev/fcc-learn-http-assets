@@ -1,6 +1,9 @@
 function printURLParts(urlString) {
   const urlObj = new URL(urlString)
-  // ?
+
+  for(let key in urlObj) {
+    console.log(`${key}: ${urlObj[key]}`)
+  }
 }
 
 // don't touch below this line
