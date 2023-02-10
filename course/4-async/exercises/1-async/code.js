@@ -1,7 +1,7 @@
-const craftingCompleteWait = 0
-const combiningMaterialsWait = 0
+const craftingCompleteWait = 300
+const combiningMaterialsWait = 100
 const smeltingIronBarsWait = 0
-const shapingIronWait = 0
+const shapingIronWait = 200
 
 // Don't touch below this line
 

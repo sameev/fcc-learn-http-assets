@@ -1,4 +1,7 @@
+const damage = 25;
+const currentHP = 50;
 
+const message = await (applyDamage(damage, currentHP));
 
 // Don't touch below this line
 
