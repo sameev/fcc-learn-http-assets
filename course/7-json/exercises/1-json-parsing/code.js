@@ -8,7 +8,9 @@ async function getLocations() {
       'Content-Type': 'application/json'
     }
   })
-  // ?
+  const parsedResponse = await response.json()
+  console.log(parsedResponse)
+  return parsedResponse;
 }
 
 // Don't touch below this line
