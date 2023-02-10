@@ -1,6 +1,20 @@
-printCharacterStats(4)
-printCharacterStats('ten')
-printCharacterStats(10)
+try {
+  printCharacterStats(4)
+} catch (err) {
+  console.log(err)
+}
+
+try {
+  printCharacterStats('ten')
+} catch (err) {
+  console.log(err)
+}
+
+try {
+  printCharacterStats(10)
+} catch (err) {
+  console.log(err)
+}
 
 // don't touch below this line
 
