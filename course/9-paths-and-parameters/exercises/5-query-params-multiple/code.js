@@ -1,6 +1,14 @@
 async function lootTreasure(baseURL, rarity) {
 
-  const fullURL = `${baseURL}`
+  const rarityMapping = {
+    Common: 1,
+    Rare: 3,
+    Legendary: 5,
+  }
+
+  const limit = rarityMapping[rarity]
+
+  const fullURL = `${baseURL}?sort=quality&limit=${limit}`
   return await getItems(fullURL, apiKey)
 }
 
